@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Celsius</p>
+<input type="number" id="inputCelsius" onchange="change()">
+<p>Fahrenheit <span id="outputFahrenheit"></span></p>
+</body>
+<script>
+    function change(){
+    let doC = document.getElementById("inputCelsius").value;
+    let doF = 1.8 * doC + 32;
+    document.getElementById("outputFahrenheit").innerHTML = doF;
+    }
+</script>
+</html>
